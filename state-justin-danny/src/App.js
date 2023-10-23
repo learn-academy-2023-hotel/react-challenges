@@ -1,10 +1,12 @@
 import React from "react"
+import "./App.css"
+import Colorbox from "./components/Colorbox"
 
 const App = () => {
   return(
     <>
-    <h1>Color Box App</h1>
-    <p>watch the boxes change colors before your eyes!</p>
+      <h1>Color Box App</h1>
+      <Colorbox />
     </>
   )
 }
