@@ -1,11 +1,13 @@
-import React, { useState } from "react"
-import "./App.css"
 
+import React, { useState } from "react"
+
+import "./App.css"
+import Changer from "./components/Changer.js"
 const App = () => {
-  const [color, setColor] = useState("white")
+  // const [color, setColor] = useState("white")
   return (
     <>
-      <div className="color-box">Color {color}</div>
+    <Changer />
     </>
   )
 }
