@@ -1,0 +1,26 @@
+.app {
+  border: 2px dashed black;
+  width: 1200px;
+  height: 600px;
+  padding: 5px;
+  margin: 100px;
+}
+.box1 {
+  border: 2px dashed black;
+  width: 300px;
+  height: 400px;
+  padding: 5px;
+  margin: 50px;
+}
+.dice {
+border: 2px dashed black;
+width: 150px;
+height: 150px;
+padding: 5px;
+margin: 50px;
+}
+.cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
