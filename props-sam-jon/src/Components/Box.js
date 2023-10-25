@@ -1,8 +1,8 @@
-import React from 'react'
-import RandomNum from './RandomNum'
+import React, { useState }from 'react'
+
 
 const Box = (props) => {
-    let num =  RandomNum 
+    
     return (
         <>
         <div className='Box'>
