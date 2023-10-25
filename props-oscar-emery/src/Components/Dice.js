@@ -1,9 +1,8 @@
 import React from "react"
+
 const Dice = (props) => {
     return (
-     <>
-    <button onClick={props.rollNum}>Click here</button>
-    </>
+    <>{props.rollNum}</>
     )
 }
 export default Dice
