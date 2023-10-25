@@ -1,0 +1,10 @@
+.square-box {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
