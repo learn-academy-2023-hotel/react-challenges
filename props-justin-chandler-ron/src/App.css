@@ -30,4 +30,12 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
+}
+
+.diceRoll {
+  vertical-align: middle;
+  justify-content: center;
+  display: flex;
+  padding: 20px 0;
 }

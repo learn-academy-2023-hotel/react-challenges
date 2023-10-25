@@ -1,11 +1,11 @@
 import React from "react"
 
-const Dice = () => {
+const Dice = (props) => {
     return(
         <div className="box">
             <div className="insideBox">
                 <div className="dice">
-            2
+                    <p className="diceRoll">{props.currentRoll}</p>
                 </div>
             </div>
             <div className="insideBox">
