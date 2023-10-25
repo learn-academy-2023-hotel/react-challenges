@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Box = () => {
+const Box = (props) => {
     return (
         <div className="Box"></div>
     )
