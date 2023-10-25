@@ -6,9 +6,11 @@ import "./App.css"
 const App = () => {
   return (
     <>
-    <h1> Hello ! </h1>
+    <h1>Jean & M Dice Game! </h1>
     <div classNAme="margin"></div>
+
     <Box />
+    
     </>
   )
 }
