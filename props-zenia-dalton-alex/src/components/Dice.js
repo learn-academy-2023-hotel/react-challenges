@@ -1,11 +1,13 @@
 import React from "react"
 
-const Dice = () => {
-    const number = Math.floor(Math.random() * 6) + 1
-    
+const Dice = (props) => {
+    const rollNum = Math.floor(Math.random() * 6) + 1
+    console.log(props)
+
     return (
-        <button>onclick</button>
-        console.log(number)
+        // <h3>Number: {diceRoll}</h3>
+        <div onClick = {props.rollNum} className = "large-box" > {props.diceRoll} </div>
+        // console.log(rollNum)
     )
 }
 export default Dice
