@@ -1,15 +1,26 @@
-import React from 'react'
-import Box from "./components/box.js"
+import React, { useState } from 'react'
 import "./App.css" 
-import Numbers from './components/numbers.js'
+// import Dice from './components/Dice.js'
+import Roll from "./components/Roll.js"
 
 const App = () => {
-  return(
+  
+  
+  return (
     <>
     <h1>Dice</h1>
-    <Numbers side = "1"/>
+        {/* <Dice /> */}
+          <Roll />
     </>
-  )
-}
+          )
+
+    }
+
 
 export default App
+
+
+
+
+
+
