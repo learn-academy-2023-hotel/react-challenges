@@ -7,8 +7,9 @@ const App = () => {
   const [currentNumber, setCurrentNumber] = useState(numbers[0])
 
   const nextNumber = () => {
-    let nextIndex = numbers.indexOf(currentNumber) + 1
-    setCurrentNumber(numbers[nextIndex])
+    const totalDice = Math.floor(Math.random(6) )
+    console.log(totalDice())
+
   }
 
   return (
