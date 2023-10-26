@@ -1,28 +1,27 @@
 import React, { useState } from "react"
 import Menu from "./components/Menu.js"
-
-
+import Total from "./components/OrderLIst.js"
+import "./App.css"
 
 
 const App = () => {
   const [outNIn, setOutnIn] = useState([
-    { item: "Double double", price: "6" },
+    { item: "Double double", price: 6 },
     { item: "Fries", price: 3 },
     { item: "Shake", price: 4 },
     { item: "Cheeseburger", price: 5 },
     { item: "Drink", price: 1 }
   ])
-  // const orderedFood = (selectedFood) => {
-  //   console.log("clicked")
-  //   outNIn[selectedFood].price = number
+
   const orderedFood = (selectedFood, newPrice) => {
-    // Update the price of the selected food item
-    const updatedMenu = [...outNIn];
-    updatedMenu[selectedFood].price = newPrice;
+    const updatedMenu = [...outNIn]
     setOutnIn(updatedMenu);
     console.log(outNIn[selectedFood])
   };
 
+// const completedOrder = (total) => {
+
+// }
 
 
 return (
@@ -39,6 +38,7 @@ return (
         />
       )
     })}
+    <Total />
   </>
 )
 }
