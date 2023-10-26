@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import './App.css';
 import FoodMenu from "./components/FoodMenu"
+import YourOrder from "./components/YourOrder";
 
 const App = () => {
   const [foods, setFoods ] = useState ([
@@ -15,23 +16,39 @@ const App = () => {
   ])
 
 const orderedFood = (selectedFood) => {
-
+  console.log(selectedFood) // --> logs the id of the movie clicked
+    console.log(foods[selectedFood]) // --> logs the clicked movie object
+    console.log(foods[selectedFood].clicked) // --> logs the clicked movie watched value
+    foods[selectedFood].watched = true // updates the watched value to true
+    setFoods([...foods]) // sets the state to reflect the new changes
 
 }
 
   return (
     
     <>
-  <h1>AMERICAN FAST FOOD</h1>
-  {foods.map((food,index) => {
-    return <FoodMenu 
+    <h1>AMERICAN FAST FOOD</h1>
+      {foods.map((food,index) => {
+      return <FoodMenu 
             food={food} 
             key={index} 
             orderedFood = {orderedFood}
-            index={index}
-            />
-  })} 
-  </>
+            index={index}/>
+    }  )   }
+    <h2>YOUR ORDER </h2>
+      {foods.filter((foods[0]) => {
+      return 
+            
+      
+    
+    
+
+      
+           
+            
+  
+   </>
+
   );
 }
 export default App;
