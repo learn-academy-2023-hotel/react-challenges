@@ -42,7 +42,9 @@ const foodSelect = (selectedFood) => {
       </div>
       <h1>Order</h1>
       <div className="Order">
-       
+      {food.filter((item) => item.selected === true).map((value) => {
+        return <h2>{value.foodItem}</h2>
+      })}
 
       </div>
     </>
