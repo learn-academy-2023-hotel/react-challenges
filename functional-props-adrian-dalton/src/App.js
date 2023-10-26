@@ -5,35 +5,42 @@ import Menu from "./components/Menu.js"
 
 
 const App = () => {
-  const [OutnIn, setOutnIn] = useState([
-    { item: "Double double", price: "6.00"},
-    { item: "Fries", price: "3.00"},
-    { item: "Shake", price: "4.00"},
-    { item: "Cheeseburger", price: "5.00"},
-    { item: "Drink", price: "1.00"}
+  const [outNIn, setOutnIn] = useState([
+    { item: "Double double", price: "6" },
+    { item: "Fries", price: 3 },
+    { item: "Shake", price: 4 },
+    { item: "Cheeseburger", price: 5 },
+    { item: "Drink", price: 1 }
   ])
-  const orderedFood = (selectedFood) => {
-    console.log(OutnIn[selectedFood])
-    OutnIn[selectedFood].price = ""
+  // const orderedFood = (selectedFood) => {
+  //   console.log("clicked")
+  //   outNIn[selectedFood].price = number
+  const orderedFood = (selectedFood, newPrice) => {
+    // Update the price of the selected food item
+    const updatedMenu = [...outNIn];
+    updatedMenu[selectedFood].price = newPrice;
+    setOutnIn(updatedMenu);
+    console.log(outNIn[selectedFood])
+  };
 
-  }
 
-  return (
-    <>
+
+return (
+  <>
     <h1>Welcome to OutnIn</h1>
-    {OutnIn.map((OutnIn, index) => {
-    return(
-     <Menu  
-     Menu={Menu}
-     price={price}
-     key={index}
-     orderedFood={orderedFood}
-     index={index}
-     />
-    )
- })}
-</>
-  )
+    {outNIn.map((foodItem, index) => {
+      return (
+        <Menu
+          item={foodItem.item}
+          price={foodItem.price}
+          key={index}
+          orderedFood={orderedFood}
+          index={index}
+        />
+      )
+    })}
+  </>
+)
 }
 
 
