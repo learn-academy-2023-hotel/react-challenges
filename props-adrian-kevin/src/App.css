@@ -1,0 +1,22 @@
+.inner-box {
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .inner-boxdice {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .outer-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
