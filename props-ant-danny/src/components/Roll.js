@@ -6,7 +6,7 @@ const Roll = () =>{
     const randNum = Math.floor(Math.random() * 100)
 
     const handleClick = () => {
-        // console.log("random number ", randNum)
+        // console.log("random number ", randNum)    
         setNumber(randNum)
         }
         return (
