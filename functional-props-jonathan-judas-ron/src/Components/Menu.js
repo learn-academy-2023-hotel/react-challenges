@@ -1,9 +1,18 @@
- const Menu = () => {
-
+const Menu = (props) => {
+  
     return (
         <>
-        <h1>Food</h1>
+            
+
+         <p>{props.junkFood.name} ${props.junkFood.$}</p>
+         {props.junkFood.picked && <p>Added to order.</p>}
+          <button onClick={() => props.foodPicked(props.index)} className='buttons'>
+            Add Item
+          </button>
+
+        
         </>
-    )
+    );
+    
 }
 export default Menu

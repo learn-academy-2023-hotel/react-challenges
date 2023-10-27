@@ -1,7 +1,5 @@
-const Order = () => {
-    return (
-        <h1>Testing</h1>
-    )
+const Order = (props) => {
+   return
 }
 
 export default Order
