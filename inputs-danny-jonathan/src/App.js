@@ -20,9 +20,13 @@ onChange={handleChange}
 <GoodRobot 
 value={userInput}/>
 <h1>Bad Robot</h1>
-<BadRobot />
+{/* bad robot to say BLAB 1 charachter for every character that is in userInput
+start with userInput, .split() every letter out of the words typed in userInput
+change letters to BLAB then .join() them together
+charAT(i) each letter then */}
+<BadRobot value={userInput} />
 <h1>yeezy 5000 Robot</h1>
-<Yeezy5000 />
+<Yeezy5000 value={userInput}/>
 </>
 )
 }
