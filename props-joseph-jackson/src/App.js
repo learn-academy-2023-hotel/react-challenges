@@ -10,8 +10,10 @@ const App = () => {
   const [currentNumber, setCurrentNumber] = useState(numbers[0])
 
   const nextNumber = () => {
+
     let diceTotal = Math.floor(Math.random() * 6) 
     setCurrentNumber(numbers[diceTotal])  
+
   }
 
   // const translatedWordsArray = arrayOfUserInput.map((eachWord) => {
