@@ -1,0 +1,19 @@
+
+h3{
+  padding-left: 45px;
+}
+.order-box{
+  border: solid; color: black;
+  width: 300px;
+  height: 300px;
+  margin-left: 700px;
+} 
+
+.big-box{
+  border: dashed;
+  
+}
+.header{
+
+  text-align: center;
+}
