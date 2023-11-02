@@ -1,0 +1,14 @@
+.Box {
+  border: 2px dashed black;
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+}
+button {
+  border: 2px dashed black;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+
+}
+
