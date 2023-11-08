@@ -1,3 +1,14 @@
+
+.square-box {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+=======
 .main {
   border: 2px solid black;
   width: 200px;
@@ -16,4 +27,5 @@ h1 {
 .card {
 display: flex;
 justify-content: center;
+
 }
