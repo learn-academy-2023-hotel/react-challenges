@@ -1,0 +1,31 @@
+
+.square-box {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+=======
+.main {
+  border: 2px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.button-ctr {
+  /* display: flex; */
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+display: flex;
+justify-content: center;
+
+}
