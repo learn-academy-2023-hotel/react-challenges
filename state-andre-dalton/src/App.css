@@ -1,0 +1,16 @@
+.color-box {
+  border: 2px solid black;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  
+}
+
+/* .counters {
+  display: flex;
+  justify-content: space-around;
+} */
+
+body {
+  background-color: lightblue;
+}
