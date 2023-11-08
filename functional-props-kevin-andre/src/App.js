@@ -8,6 +8,7 @@ const App = () => {
   // let food = [{ item: 'hotdog', price: .99 }, { item: 'hamburger', price: 1.00 }, { item: 'fries', price: .50 }]
 
   const [foodItems, setFoodItems] = useState([
+
     { item: 'hotdog', price: .99 , order: false},
     { item: 'hamburger', price: 1.00 , order: false},
     { item: 'fries', price: .50 , order: false},
@@ -24,6 +25,7 @@ const App = () => {
     foodItems[selectedItem].order = true
     setFoodItems([...foodItems])
   }
+
  
   return (
     <>
